@@ -310,7 +310,7 @@ Using a fixed-effects Poisson model, we analyzed daily sewer overflows by zip co
 
   * **7-day cumulative rainfall** significantly increases overflows. Single-day rainfall not significant.
   * **Demographics** (race/ethnicity percentages, median income) positively correlated with overflow frequency.
-* **💡 Interpretation:** Sustained rainfall drives overflows; demographic correlations suggest infrastructure disparities ![poisson_coefficient_plot_overflow_1day](https://github.com/RiceD2KLab/Bayou_Sp25/blob/849925ddcfaf4b92b6e10b5cceb8a85c7fe34563/outputs/figures/poisson_coefficient_plot_overflow_1day.png).
+* **💡 Interpretation:** Sustained rainfall drives overflows; demographic correlations suggest infrastructure disparities ![poisson_coefficient_plot_overflow_1day](https://github.com/weijiahui199/Bayou_Sp25/blob/main/outputs/figures/poisson_coefficient_plot_overflow_1day.png).
 
 ---
 
@@ -322,6 +322,6 @@ We used Geographically Weighted Regression (GWR) with monthly data to explore sp
 
   * **💧 Rainfall & Income:** Strongest effects in **East Houston** (higher rainfall impact, lower-income areas experiencing more overflows).
   * **🧑‍🤝‍🧑 Race/Ethnicity:** Significant Hispanic population impacts concentrated in **Northeast Houston**.
-* **📌 Interpretation:** Highlights infrastructure vulnerabilities in East and Northeast Houston, indicating areas for targeted intervention. ![(Census category “Other” (left).Rainfall Significance & Heatmap of total overflow events overlaid demonstrating where most events occur. (right).)](https://github.com/RiceD2KLab/Bayou_Sp25/blob/15d271b20ac287876510567e87197cfc79db0191/EDA/image.png)
+* **📌 Interpretation:** Highlights infrastructure vulnerabilities in East and Northeast Houston, indicating areas for targeted intervention. ![(Census category “Other” (left).Rainfall Significance & Heatmap of total overflow events overlaid demonstrating where most events occur. (right).)](https://github.com/weijiahui199/Bayou_Sp25/blob/main/EDA/image.png)
 
 ---
