@@ -1,0 +1,54 @@
+2025-05-04 03:06:45,570 - 
+================================================================================
+2025-05-04 03:06:45,570 - Running analysis for overflow data with 2-day resolution
+2025-05-04 03:06:45,570 - ================================================================================
+2025-05-04 03:06:46,168 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:06:46,309 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:06:46,317 -                  Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:               overflow   No. Observations:                29727
+Model:                            GLM   Df Residuals:                    29712
+Model Family:                 Poisson   Df Model:                           14
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -16510.
+Date:                Sun, 04 May 2025   Deviance:                       22187.
+Time:                        03:06:46   Pearson chi2:                 3.64e+04
+No. Iterations:                     6   Pseudo R-squ. (CS):            0.02687
+Covariance Type:                  HC0                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept              -5.5715      0.200    -27.843      0.000      -5.964      -5.179
+C(season)[T.Spring]    -0.0180      0.038     -0.471      0.638      -0.093       0.057
+C(season)[T.Summer]    -0.2743      0.043     -6.337      0.000      -0.359      -0.189
+C(season)[T.Fall]       0.0645      0.040      1.622      0.105      -0.013       0.142
+C(year)[T.2022]         0.2770      0.041      6.794      0.000       0.197       0.357
+C(year)[T.2023]         0.0525      0.041      1.266      0.206      -0.029       0.134
+C(year)[T.2024]         0.1680      0.054      3.106      0.002       0.062       0.274
+rainfall                0.0456      0.048      0.944      0.345      -0.049       0.140
+rainfall_lag1          -0.0738      0.044     -1.658      0.097      -0.161       0.013
+rainfall_cum7           0.0353      0.017      2.084      0.037       0.002       0.068
+income_scaled           0.0229      0.002     13.871      0.000       0.020       0.026
+population_scaled       0.0022      0.001      2.684      0.007       0.001       0.004
+percent_white           0.0172      0.002      9.881      0.000       0.014       0.021
+percent_black           0.0306      0.002     16.963      0.000       0.027       0.034
+percent_other           0.0350      0.002     20.211      0.000       0.032       0.038
+=======================================================================================
+2025-05-04 03:06:46,339 - Found 10 significant variables at alpha=0.05
+2025-05-04 03:06:47,681 - 
+Training Set Performance Metrics:
+2025-05-04 03:06:47,681 - Mean Squared Error: 0.2587
+2025-05-04 03:06:47,681 - Root Mean Squared Error: 0.5087
+2025-05-04 03:06:47,681 - Mean Absolute Error: 0.3395
+2025-05-04 03:06:47,681 - Exact Count Match Accuracy: 0.8275 (82.7%)
+2025-05-04 03:06:47,681 - Within ±1 Count Accuracy: 0.9707 (97.1%)
+2025-05-04 03:06:47,681 - Within ±2 Count Accuracy: 0.9943 (99.4%)
+2025-05-04 03:06:47,699 - 
+Test Set Performance Metrics:
+2025-05-04 03:06:47,699 - Mean Squared Error: 0.0711
+2025-05-04 03:06:47,699 - Root Mean Squared Error: 0.2666
+2025-05-04 03:06:47,699 - Mean Absolute Error: 0.2267
+2025-05-04 03:06:47,700 - Exact Count Match Accuracy: 0.9664 (96.6%)
+2025-05-04 03:06:47,700 - Within ±1 Count Accuracy: 0.9976 (99.8%)
+2025-05-04 03:06:47,700 - Within ±2 Count Accuracy: 0.9997 (100.0%)
+2025-05-04 03:06:49,598 - Model saved to e:\Bayou_final\Bayou_Sp25\outputs\models\poisson_overflow_2day.pkl

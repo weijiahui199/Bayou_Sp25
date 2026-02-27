@@ -1,0 +1,54 @@
+2025-05-04 03:06:54,025 - 
+================================================================================
+2025-05-04 03:06:54,026 - Running analysis for overflow data with 3-day resolution
+2025-05-04 03:06:54,026 - ================================================================================
+2025-05-04 03:06:54,482 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:06:54,573 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:06:54,582 -                  Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:               overflow   No. Observations:                19764
+Model:                            GLM   Df Residuals:                    19749
+Model Family:                 Poisson   Df Model:                           14
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -14292.
+Date:                Sun, 04 May 2025   Deviance:                       18305.
+Time:                        03:06:54   Pearson chi2:                 2.56e+04
+No. Iterations:                     6   Pseudo R-squ. (CS):            0.03969
+Covariance Type:                  HC0                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept              -5.1526      0.205    -25.168      0.000      -5.554      -4.751
+C(season)[T.Spring]    -0.0224      0.039     -0.569      0.569      -0.099       0.055
+C(season)[T.Summer]    -0.2841      0.045     -6.309      0.000      -0.372      -0.196
+C(season)[T.Fall]       0.0632      0.041      1.538      0.124      -0.017       0.144
+C(year)[T.2022]         0.2646      0.044      6.042      0.000       0.179       0.350
+C(year)[T.2023]         0.0455      0.044      1.032      0.302      -0.041       0.132
+C(year)[T.2024]         0.1516      0.058      2.598      0.009       0.037       0.266
+rainfall               -0.0079      0.046     -0.174      0.862      -0.097       0.081
+rainfall_lag1           0.0153      0.040      0.381      0.703      -0.063       0.094
+rainfall_cum7           0.0266      0.017      1.572      0.116      -0.007       0.060
+income_scaled           0.0230      0.002     13.751      0.000       0.020       0.026
+population_scaled       0.0022      0.001      2.603      0.009       0.001       0.004
+percent_white           0.0171      0.002      9.595      0.000       0.014       0.021
+percent_black           0.0305      0.002     16.493      0.000       0.027       0.034
+percent_other           0.0350      0.002     19.855      0.000       0.032       0.038
+=======================================================================================
+2025-05-04 03:06:54,601 - Found 9 significant variables at alpha=0.05
+2025-05-04 03:06:55,983 - 
+Training Set Performance Metrics:
+2025-05-04 03:06:55,983 - Mean Squared Error: 0.4098
+2025-05-04 03:06:55,983 - Root Mean Squared Error: 0.6402
+2025-05-04 03:06:55,983 - Mean Absolute Error: 0.4635
+2025-05-04 03:06:55,983 - Exact Count Match Accuracy: 0.7443 (74.4%)
+2025-05-04 03:06:55,983 - Within ±1 Count Accuracy: 0.9494 (94.9%)
+2025-05-04 03:06:55,983 - Within ±2 Count Accuracy: 0.9876 (98.8%)
+2025-05-04 03:06:55,998 - 
+Test Set Performance Metrics:
+2025-05-04 03:06:55,998 - Mean Squared Error: 0.1343
+2025-05-04 03:06:55,998 - Root Mean Squared Error: 0.3665
+2025-05-04 03:06:55,998 - Mean Absolute Error: 0.3279
+2025-05-04 03:06:55,998 - Exact Count Match Accuracy: 0.9165 (91.6%)
+2025-05-04 03:06:55,998 - Within ±1 Count Accuracy: 0.9965 (99.6%)
+2025-05-04 03:06:55,998 - Within ±2 Count Accuracy: 0.9987 (99.9%)
+2025-05-04 03:06:58,199 - Model saved to e:\Bayou_final\Bayou_Sp25\outputs\models\poisson_overflow_3day.pkl

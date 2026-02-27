@@ -1,0 +1,55 @@
+2025-05-04 03:07:08,871 - 
+================================================================================
+2025-05-04 03:07:08,871 - Running analysis for 311 data with 7-day resolution
+2025-05-04 03:07:08,871 - ================================================================================
+2025-05-04 03:07:09,107 - Renamed 311_calls column to calls_311 to avoid syntax errors
+2025-05-04 03:07:09,107 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:07:09,213 - Fitting Fixed Effects Poisson Model...
+2025-05-04 03:07:09,220 -                  Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:              calls_311   No. Observations:                 9442
+Model:                            GLM   Df Residuals:                     9427
+Model Family:                 Poisson   Df Model:                           14
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -16411.
+Date:                Sun, 04 May 2025   Deviance:                       22978.
+Time:                        03:07:09   Pearson chi2:                 3.09e+04
+No. Iterations:                    28   Pseudo R-squ. (CS):             0.9233
+Covariance Type:                  HC0                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept             -31.3514   3406.345     -0.009      0.993   -6707.665    6644.962
+C(season)[T.Spring]    -0.5739      0.047    -12.155      0.000      -0.666      -0.481
+C(season)[T.Summer]    -0.3257      0.052     -6.265      0.000      -0.428      -0.224
+C(season)[T.Fall]       0.2021      0.048      4.169      0.000       0.107       0.297
+C(year)[T.2022]        27.1954   3357.983      0.008      0.994   -6554.331    6608.722
+C(year)[T.2023]        29.0374   3031.109      0.010      0.992   -5911.827    5969.902
+C(year)[T.2024]        29.2291   2858.013      0.010      0.992   -5572.373    5630.831
+rainfall                0.1207      0.037      3.269      0.001       0.048       0.193
+rainfall_lag1           0.0821      0.038      2.139      0.032       0.007       0.157
+rainfall_cum7           0.0803      0.016      4.963      0.000       0.049       0.112
+income_scaled           0.0301      0.002     14.142      0.000       0.026       0.034
+population_scaled      -0.0004      0.001     -0.386      0.700      -0.002       0.001
+percent_white           0.0040      0.002      1.719      0.086      -0.001       0.009
+percent_black           0.0299      0.002     12.599      0.000       0.025       0.035
+percent_other           0.0372      0.002     17.482      0.000       0.033       0.041
+=======================================================================================
+2025-05-04 03:07:09,232 - Found 9 significant variables at alpha=0.05
+2025-05-04 03:07:11,045 - 
+Training Set Performance Metrics:
+2025-05-04 03:07:11,045 - Mean Squared Error: 8.0241
+2025-05-04 03:07:11,045 - Root Mean Squared Error: 2.8327
+2025-05-04 03:07:11,045 - Mean Absolute Error: 1.5540
+2025-05-04 03:07:11,045 - Exact Count Match Accuracy: 0.4785 (47.9%)
+2025-05-04 03:07:11,045 - Within ±1 Count Accuracy: 0.6830 (68.3%)
+2025-05-04 03:07:11,045 - Within ±2 Count Accuracy: 0.7731 (77.3%)
+2025-05-04 03:07:11,055 - 
+Test Set Performance Metrics:
+2025-05-04 03:07:11,055 - Mean Squared Error: 11.7379
+2025-05-04 03:07:11,055 - Root Mean Squared Error: 3.4261
+2025-05-04 03:07:11,055 - Mean Absolute Error: 2.7042
+2025-05-04 03:07:11,055 - Exact Count Match Accuracy: 0.0996 (10.0%)
+2025-05-04 03:07:11,055 - Within ±1 Count Accuracy: 0.3104 (31.0%)
+2025-05-04 03:07:11,055 - Within ±2 Count Accuracy: 0.5434 (54.3%)
+2025-05-04 03:07:12,949 - Model saved to e:\Bayou_final\Bayou_Sp25\outputs\models\poisson_311_7day.pkl
