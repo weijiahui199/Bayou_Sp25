@@ -262,19 +262,19 @@ It is recommended to commit this file to your repository to ensure a consistent 
 ---
 
 ## Descriptions of Relevant EDA
-![Screenshot 2025-03-25 100920](https://github.com/user-attachments/assets/0bba9fe4-2591-432a-a5c2-24b45721b87d)
+![Screenshot 2025-03-25 100920](EDA/1.png)
 
 Here, we want to see where the most private sewage overflow events occur so we can better understand the geopsatial element of this project. We can immediately notice some patterns forming, with southern and northeastern zipcodes having higher event counts overall.
 
-![Screenshot 2025-03-25 101208](https://github.com/user-attachments/assets/d58efb0a-537d-4d44-9d5f-ad3394c1a143)
+![Screenshot 2025-03-25 101208](EDA/2.png)
 
 Next, to get a better visualization of how income impacts the number of occurences of sewage overflows, we plotted median household income against overflow event counts. We can definitely see that more overflows occur in zip codes with lower median income. However, we cannot determine whether this is because of any societal pattern, or whether wealthier communities tend to underreport events. With further information from the city of Houston, we hope to better understand this.
 
-![Screenshot 2025-03-25 101119](https://github.com/user-attachments/assets/3d45b9af-63e8-4142-ac22-66e7066d4abc)
+![Screenshot 2025-03-25 101119](EDA/3.png)
 
 When segmenting through time, the amounts of private sewage overflow events vary greatly by year and month. The major peaks occur around January of 2022 and January of 2024. By showing the correlation between these two datasets, we provide justification for analyzing the public data in order to gain insights about the sewage overflows on private land. 
 
-![Screenshot 2025-03-25 101147](https://github.com/user-attachments/assets/d2cd56e3-c904-4745-b02b-f18103ac3112)
+![Screenshot 2025-03-25 101147](EDA/4.png)
 
 We mapped each overflow event to its nearest rainfall collection site by distance, so that the rainfall amount used for that location would be the most accurate.​​ This is a visual representation of the cumulative rainfall for the whole city of Houston compared to the cumulative number of sewage overflows per month, showing a general pattern of positive correlation. This gives us further information to start modeling.
 
